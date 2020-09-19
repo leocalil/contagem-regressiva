@@ -91,8 +91,10 @@ function reset(){
     inputContainer.hidden = false;
     // Stop the countdown 
     clearInterval(countdownActive);
+    // Reset values
     countdownTitle ='';
     countdownDate ='';
+    localStorage.removeItem('countdown');
 }
 
 function restorePreviousCountdown(){
